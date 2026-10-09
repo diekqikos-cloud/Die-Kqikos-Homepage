@@ -11,7 +11,7 @@
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;line-height:1.6;color:var(--ink);background:var(--paper)}
 a{color:inherit}a:focus-visible{outline:3px solid var(--orange);outline-offset:4px}.container{width:min(1120px,calc(100% - 40px));margin:auto}
 header{background:#fff;border-bottom:1px solid #e8e8e8}nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:12px 0}
-.logo{font-size:1.35rem;font-weight:800;text-decoration:none;color:var(--black)}.logo span{color:#c36b00}.navlinks{display:flex;gap:18px;flex-wrap:wrap}.navlinks a{text-decoration:none;font-size:.93rem;font-weight:600}.navlinks a:hover{color:#b85c00}
+.logo{font-size:1.35rem;font-weight:800;text-decoration:none;color:var(--black);display:flex;align-items:center;min-height:58px}.brand-image{display:block;width:210px;max-width:100%;height:auto;border-radius:3px}.brand-text{display:none}.logo:has(.brand-image[data-missing]) .brand-text{display:inline}.logo:has(.brand-image[data-missing]) .brand-image{display:none}.logo span{color:#c36b00}.navlinks{display:flex;gap:18px;flex-wrap:wrap}.navlinks a{text-decoration:none;font-size:.93rem;font-weight:600}.navlinks a:hover{color:#b85c00}
 .hero{padding:95px 0;background:linear-gradient(120deg,#111,#303030);color:#fff}.eyebrow{text-transform:uppercase;letter-spacing:.15em;font-weight:700;font-size:.8rem;color:#a95b00}.hero .eyebrow{color:#ffb341}
 h1{font-size:clamp(2.35rem,5.5vw,4.25rem);line-height:1.12;max-width:840px;margin:18px 0 22px}h2{font-size:clamp(2rem,4vw,2.75rem);line-height:1.18;margin:10px 0 18px}
 .hero p{max-width:735px;font-size:1.16rem;color:#ededed}.button{display:inline-block;background:var(--orange);color:#141414;text-decoration:none;font-weight:700;padding:13px 20px;border-radius:7px;margin-top:14px}
@@ -29,7 +29,7 @@ footer{background:var(--black);color:#fff;padding:28px 0;font-size:.9rem}.footer
 </head>
 <body>
 <header><nav class="container" aria-label="Hauptnavigation">
-<a class="logo" href="#start">Die <span>Kqikos</span></a>
+<a class="logo" href="#start" aria-label="Die Kqikos – zur Startseite"><img class="brand-image" src="logo.png" alt="Die Kqikos Hausmeisterservice" onerror="this.dataset.missing='true'"><span class="brand-text">Die <span>Kqikos</span></span></a>
 <div class="navlinks"><a href="#unternehmen">Für Unternehmen</a><a href="#privatkunden">Für Privatkunden</a><a href="#projekte">Projektberatung</a><a href="#ueber-uns">Über uns</a><a href="#kontakt">Kontakt</a></div>
 </nav></header>
 <main>
