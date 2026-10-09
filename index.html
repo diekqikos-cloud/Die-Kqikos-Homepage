@@ -22,15 +22,15 @@ section{padding:76px 0;scroll-margin-top:20px}.lead{max-width:760px;color:var(--
 .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.service{background:#fff;border:1px solid #e8e8e8;border-left:4px solid var(--orange);border-radius:9px;padding:26px}.service h3{margin:0 0 8px;font-size:1.18rem}.service p{margin:0;color:#595959}
 .business{background:#f1f1f1}.private{background:#fff}.private .service{background:#fafafa}
 .projects{background:#292929;color:#fff}.projects .eyebrow{color:#ffb341}.projects .lead{color:#e3e3e3}.about{background:#fff}.about p{max-width:760px}
-.contact{background:#fff1df}.contact-panel{display:flex;align-items:center;justify-content:space-between;gap:28px;flex-wrap:wrap}.phone{font-size:1.6rem;font-weight:800;color:#191919}.note{font-size:.9rem;color:var(--muted)}
+.gallery{background:#f2f2f2}.gallery-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.media-card{background:white;border:1px solid #ddd;border-radius:11px;overflow:hidden}.media-card img,.media-card video{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;background:#222}.media-body{padding:18px}.media-body h3{margin:0 0 8px}.media-body p{margin:0 0 8px;color:var(--muted)}.media-body a{font-weight:700;color:#945000}.media-empty{border:2px dashed #c9c9c9;border-radius:12px;padding:34px;background:#fff;max-width:800px}.reviews{background:#fff}.reviews .button{margin-right:12px}.contact{background:#fff1df}.contact-panel{display:flex;align-items:center;justify-content:space-between;gap:28px;flex-wrap:wrap}.phone{font-size:1.6rem;font-weight:800;color:#191919}.note{font-size:.9rem;color:var(--muted)}
 footer{background:var(--black);color:#fff;padding:28px 0;font-size:.9rem}.footerline{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-@media(max-width:760px){.hero{padding:70px 0}section{padding:55px 0}.audience-grid,.grid{grid-template-columns:1fr}.audience-card{padding:26px}.navlinks{gap:12px}.navlinks a{font-size:.87rem}}
+@media(max-width:760px){.hero{padding:70px 0}section{padding:55px 0}.audience-grid,.grid,.gallery-grid{grid-template-columns:1fr}.audience-card{padding:26px}.navlinks{gap:12px}.navlinks a{font-size:.87rem}}
 </style>
 </head>
 <body>
 <header><nav class="container" aria-label="Hauptnavigation">
 <a class="logo" href="#start" aria-label="Die Kqikos – zur Startseite"><img class="brand-image" src="logo.png" alt="Die Kqikos Hausmeisterservice" onerror="this.dataset.missing='true'"><span class="brand-text">Die <span>Kqikos</span></span></a>
-<div class="navlinks"><a href="#unternehmen">Für Unternehmen</a><a href="#privatkunden">Für Privatkunden</a><a href="#projekte">Projektberatung</a><a href="#ueber-uns">Über uns</a><a href="#kontakt">Kontakt</a></div>
+<div class="navlinks"><a href="#unternehmen">Für Unternehmen</a><a href="#privatkunden">Für Privatkunden</a><a href="#projekte">Projektberatung</a><a href="#galerie">Galerie</a><a href="#feedback">Feedback</a><a href="#ueber-uns">Über uns</a><a href="#kontakt">Kontakt</a></div>
 </nav></header>
 <main>
 <div class="hero" id="start"><div class="container">
@@ -70,6 +70,18 @@ footer{background:var(--black);color:#fff;padding:28px 0;font-size:.9rem}.footer
 <p class="lead">Sie planen eine Renovierung, den Innenausbau oder eine Gartengestaltung? Wir besprechen Ihr Projekt, klären den Bedarf und stimmen mit Ihnen passende Leistungen ab. Art und Umfang der Beratung und Ausführung werden individuell vereinbart.</p>
 <a class="button" href="#kontakt">Projekt besprechen</a>
 </div></section>
+<section id="galerie" class="gallery"><div class="container">
+<span class="eyebrow">Einblicke in unsere Arbeit</span><h2>Unsere Projekte in Bildern &amp; Videos</h2>
+<p class="lead">Hier zeigen wir künftig ausgewählte Referenzen aus Gebäudereinigung, Renovierung, Innenausbau sowie Gartenarbeiten. Videos und YouTube-Beiträge können ebenfalls ergänzt werden.</p>
+<div id="gallery-list" class="gallery-grid" aria-live="polite"></div>
+<div id="gallery-empty" class="media-empty"><h3>Die ersten Referenzbilder folgen</h3><p>Unsere Galerie wird aktuell vorbereitet. In Kürze finden Sie hier Einblicke in unsere Projekte.</p></div>
+</div></section>
+<section id="feedback" class="reviews"><div class="container">
+<span class="eyebrow">Ihre Meinung ist uns wichtig</span><h2>Wie zufrieden waren Sie mit unserer Arbeit?</h2>
+<p class="lead">Ihre Rückmeldung hilft uns, besser zu werden. Schreiben Sie uns gerne, was gut gelaufen ist und was wir verbessern können.</p>
+<a class="button" href="mailto:diekqikos.hausmeisterservice@gmail.com?subject=Feedback%20zu%20DieKqikos">Feedback per E-Mail senden</a>
+<p class="note">Beim Anklicken öffnet sich Ihr E-Mail-Programm. Bewertungen werden nicht automatisch öffentlich angezeigt. Auf Wunsch und nur mit Ihrer Zustimmung können wir später ausgewählte Kundenstimmen veröffentlichen.</p>
+</div></section>
 <section class="about" id="ueber-uns"><div class="container">
 <span class="eyebrow">Über uns</span><h2>Die Kqikos Hausmeisterservice</h2>
 <p>Wir sind ein Dienstleistungsunternehmen aus Rosenheim. Unser Angebot richtet sich an Unternehmen und Privatkunden: Von der gewerblichen Gebäudereinigung über Renovierungen und Innenausbau bis zu Gartenarbeiten, Entrümpelungen und Immobilienbetreuung.</p>
@@ -81,5 +93,39 @@ footer{background:var(--black);color:#fff;padding:28px 0;font-size:.9rem}.footer
 </div></section>
 </main>
 <footer><div class="container footerline"><span>© Die Kqikos Hausmeisterservice</span><span><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a> · Entwurf – rechtliche und technische Prüfung vor Veröffentlichung erforderlich.</span></div></footer>
+<script>
+/* Einträge in galerie.json pflegen. Nur eigene oder freigegebene Fotos und Videos veröffentlichen. */
+(async function () {
+  const grid = document.getElementById('gallery-list');
+  const empty = document.getElementById('gallery-empty');
+  try {
+    const response = await fetch('galerie.json', {cache:'no-store'});
+    if (!response.ok) return;
+    const data = await response.json();
+    const entries = Array.isArray(data.eintraege) ? data.eintraege : [];
+    let count = 0;
+    for (const entry of entries) {
+      if (!entry || !['bild','video','youtube'].includes(entry.typ) || typeof entry.url !== 'string') continue;
+      const isLocal = /^(medien\/)[a-zA-Z0-9_./-]+$/.test(entry.url) && !entry.url.includes('..');
+      const yt = /^https:\/\/(www\.)?(youtube\.com\/watch\?v=[\w-]{11}|youtu\.be\/[\w-]{11})([&#?][^\s]*)?$/.test(entry.url);
+      if (entry.typ === 'youtube' ? !yt : !isLocal) continue;
+      const card = document.createElement('article'); card.className='media-card';
+      if (entry.typ === 'bild') {
+        const img=document.createElement('img'); img.src=entry.url; img.loading='lazy'; img.alt=entry.alt||entry.titel||'Projektbild'; card.append(img);
+      } else if (entry.typ === 'video') {
+        const vid=document.createElement('video'); vid.src=entry.url; vid.controls=true; vid.preload='metadata'; vid.setAttribute('aria-label',entry.titel||'Projektvideo'); card.append(vid);
+      }
+      const body=document.createElement('div'); body.className='media-body';
+      const title=document.createElement('h3');title.textContent=entry.titel||'Projekt';body.append(title);
+      if(entry.beschreibung){const p=document.createElement('p');p.textContent=entry.beschreibung;body.append(p);}
+      if(entry.typ==='youtube'){const link=document.createElement('a');link.href=entry.url;link.target='_blank';link.rel='noopener noreferrer';link.textContent='Video auf YouTube ansehen ↗';body.append(link);}
+      card.append(body);grid.append(card);count++;
+    }
+    if(count)empty.hidden=true;
+  } catch(e) {
+    // Beim lokalen Öffnen über file:// kann fetch gesperrt sein. Die Seite bleibt benutzbar.
+  }
+})();
+</script>
 </body>
 </html>
