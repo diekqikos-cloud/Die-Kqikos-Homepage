@@ -1,4 +1,23 @@
 {
-  "_hilfe": "Neue Bilder oder Videos in den Ordner medien/ hochladen und dann hier eintragen. YouTube nur als normaler Link (kein eingebetteter Player). Keine Kundenbilder oder Bewertungen ohne Freigabe veröffentlichen.",
-  "eintraege": []
+  "_hilfe": "Lokale Bilder werden als typ=bild aus medien/ eingebunden. Drive-Fotos erscheinen vorübergehend als verlinkte Karten ohne öffentliche Bildvorschau. Vor Freischaltung Nutzungsrechte und Bildzugriff prüfen.",
+  "eintraege": [
+    {
+      "typ": "drive",
+      "url": "https://drive.google.com/file/d/1dfVkPLFAAz-2JfD07hebJ8-PmQbGKvUZ/view",
+      "titel": "Vorher",
+      "beschreibung": "Ausgangszustand der Küche vor der Modernisierung."
+    },
+    {
+      "typ": "drive",
+      "url": "https://drive.google.com/file/d/1iA_Wa6Ve2bzhPLHvKf0IQ6yjSW21Xk3j/view",
+      "titel": "Umbau",
+      "beschreibung": "Arbeiten während der Küchenmodernisierung."
+    },
+    {
+      "typ": "drive",
+      "url": "https://drive.google.com/file/d/1rWl1TgKmXN_7PFOzPtgMaaHxTICs7h2t/view",
+      "titel": "Nachher",
+      "beschreibung": "Die fertiggestellte neue Küche."
+    }
+  ]
 }
